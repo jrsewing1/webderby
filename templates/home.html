@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+{% block content %}
+	{% for car in cars %}
+		<h1>{{ car.car }}</h1>
+		<p>Driver {{ car.driver }} in Lane {{ car.lane }}</p>
+	{% endfor %}
+{% endblock content %}
